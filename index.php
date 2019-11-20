@@ -3,13 +3,16 @@
 </head>
 
 <body>
-	<?php
-	$count = 1;
-		do {
-			echo $count;
-			$count++;
-		}
-		while ($count < 11)
-	?>
+<?php $i = 0; ?>
+	<table>
+		<tr>
+			<?php while ($i < 3):?>
+				<td>
+					<?php echo $i;
+					$i++; ?>
+				</td>
+			<?php endwhile; ?>
+		</tr>
+	</table>
 </body>
 </html>
